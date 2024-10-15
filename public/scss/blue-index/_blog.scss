@@ -1,0 +1,45 @@
+/* 
+---------------------------------------------
+blog
+--------------------------------------------- 
+*/
+
+.blog-post-thumb {
+	.img {
+		height: 200px;
+	}
+	h3 {
+		a {
+			&:hover {
+				color: var(--color-2);
+			}
+		}
+	}
+
+	.btn-primary-line {
+		border: 1px solid var(--color-2);
+		&:hover {
+			background: $primaryColor;
+			color: #fff;
+		}
+	}
+}
+@media (max-width : 991px) {
+	.blog-post-thumb {
+		&.big {
+			.img {
+				height: 350px;
+			}
+		}
+	}
+}
+
+@media (max-width : 420px) {
+	.blog-post-thumb {
+		&.big {
+			.img {
+				height: 200px;
+			}
+		}
+	}
+}

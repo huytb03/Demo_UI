@@ -1,0 +1,160 @@
+.header-area {
+	height: 77px;
+	.main-nav {
+		overflow: hidden;
+		.nav {
+			li {
+				&.submenu {
+					ul {
+						width: 200px;
+						transform: translateY(1em);
+						visibility: hidden;
+						transition: all 0.2s ease-in-out 0s, visibility 0s linear 0.09s, z-index 0s linear 0.01s;
+						li {
+							a {
+								&:hover {
+									&:before {
+										content: '';
+										position: absolute;
+										width: 0px;
+										height: 40px;
+										left: 0px;
+										top: 0px;
+										bottom: 0px;
+										@include transition(.3s);
+										background: var(--color-2);
+										width: 3px;
+									}
+								}
+							}
+						}
+					}
+					&:hover {
+						ul {
+							visibility: visible;
+							transform: translateY(0%);
+						}
+					}
+				}
+			}
+		}
+		.menu-trigger {
+			span,
+			span:before,
+			span:after {
+				transition: all 0.4s;
+				width: 30px;
+				height: 2px;
+			}
+			span:before,
+			span:after {
+				transition: all 0.4s;
+				background-color: var(--color-3);
+				display: block;
+				position: absolute;
+				width: 30px;
+				height: 2px;
+				left: 0;
+				width: 75%;
+			}
+			span:before,
+			span:after {
+				content: "";
+			}
+			span {
+				&:before {
+					transform-origin: 33% 100%;
+					top: -10px;
+				}
+
+				&:after {
+					transform-origin: 33% 0;
+					top: 10px;
+				}
+			}
+
+			&.active span,
+			&.active span:before,
+			&.active span:after {
+				background-color: transparent;
+				width: 100%;
+			}
+
+			&.active span:before {
+				transform: translateY(6px) translateX(1px) rotate(45deg);
+				background-color: var(--color-3);
+			}
+
+			&.active span:after {
+				transform: translateY(-6px) translateX(1px) rotate(-45deg);
+				background-color: var(--color-3);
+			}
+		}
+
+		.header-buttons {
+			li {
+				.btn-nav-line {
+					@include transition(.3s);
+
+					&:hover {
+						background: var(--color-2);
+						color: var(--color-1);
+					}
+				}
+				.btn-nav-primary {
+					@include transition(.3s);
+
+					&:hover {
+						background: var(--color-1);
+						color: var(--color-2);
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 992px) {
+	.header-area {
+		box-shadow: none;
+		.main-nav {
+			.nav {
+				background-color: var(--color-1);
+				width: 100%;
+				@include transition(0s);
+				li {
+					width: 100%;
+					border-bottom:1px solid var(--color-8);
+					&.submenu {
+						ul {
+							width: 100%;
+							position: relative !important;
+							visibility: inherit;
+							transform: translateY(0%);
+							transition-delay: 0s, 0s, 0.3s;
+							height: 0px;
+							li{
+								background-color: var(--color-1);
+							}
+							&.active {
+								height: auto !important;
+							}
+						}
+						&:after {
+							color: var(--color-3);
+							right: 25px;
+							font-size: 14px;
+							top: 15px;
+						}
+						&:hover,
+						&:focus {
+							ul {
+								height: 0px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

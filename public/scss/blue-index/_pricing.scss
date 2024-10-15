@@ -1,0 +1,42 @@
+/* 
+---------------------------------------------
+pricing
+--------------------------------------------- 
+*/
+
+.pricing-item {
+	&.active {
+		.pricing-header {
+			.number {
+				&:before {
+					border-bottom: 14px solid #fff;
+				}
+				&:after {
+					border-top: 14px solid #fff;
+				}
+			}
+		}
+	}
+	.pricing-header	{
+		height: 130px;
+	}
+	.pricing-body {
+		.number {
+			width: 42px;
+			height: 42px;
+			margin-top: -20px;
+		}
+			.currency {
+				top: -15px;
+			}
+	}
+	.pricing-footer {
+		a {
+			border: 1px solid var(--color-2);
+			&:hover {
+				background: $primaryColor;
+				color: #fff;
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+.services {
+	&:hover {
+		.icon {
+			&:before {
+				transform: rotate(0deg);
+			}
+		}
+	}
+	.icon {
+		min-height: 166px;	
+		&:before {
+			content: '';
+			position: absolute;
+			top: 15px;
+			left: 0px;
+			right: 0px;
+			margin: auto;
+			width: 133px;
+			height: 133px;
+			background: $lightColor;
+			border-radius: 3px;
+			transform: rotate(45deg);
+			transition: 0.3s;
+		}
+	}
+
+}
+.page {
+	.cover {
+		height: 270px;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 140%;
+			height: 140%;
+			left: -20%;
+			top: -20%;
+			right: -20%;
+			bottom: -20%;
+			background-image: linear-gradient(127deg, var(--color-2) 0%, #223A9E 91%);
+			z-index: 2;
+			opacity: 0.95;
+		}
+	}
+	.page-bottom {
+		.about {
+			.about-image {
+				height: 500px;
+				box-shadow: 0 2px 48px 0 rgba(0,0,0,0.08);
+			}
+			.about-text {
+				width: 40%;
+				right: 40px;
+				top: 50%;
+				transform: perspective(1px) translateY(-50%);
+			}
+		}
+	}
+}
