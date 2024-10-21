@@ -25,6 +25,13 @@ mix.sass('public/scss/blue-index/blue_index.scss', 'dist/css');
 mix.sass('public/scss/blue-index/index.scss', 'dist/css');
 mix.sass('public/scss/blue-index/blue-about.scss', 'dist/css');
 mix.sass('public/scss/blue-index/features.scss', 'dist/css');
+mix.sass('public/scss/blue-index/blue-faq.scss', 'dist/css');
+mix.sass('public/scss/blue-index/blue-blog.scss', 'dist/css');
+mix.sass('public/scss/blue-index/blue-contact.scss', 'dist/css');
+
+
+
+
 
 
 

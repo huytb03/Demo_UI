@@ -13,12 +13,14 @@
 	<link rel="icon" type="image/png" href="assets/images/favicon/favicon.png" />
 
 	<!-- Bootstrap & Plugins CSS -->
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/magnific-popup.css" rel="stylesheet" type="text/css">
+	<link href="../dist/css/blue-faq.css" rel="stylesheet" type="text/css">
+
+	<link href="../dist/css/common.css" rel="stylesheet" type="text/css">
+	<link href="../dist/css/global.css" rel="stylesheet" type="text/css">
 
 	<!-- Custom CSS -->
-	<link href="../dist/css/blue.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -30,53 +32,99 @@
 
 	
 	<!-- ***** Header Area Start ***** -->
-	<header class="header-area header-white">
+	<header class="header-area container bg-color-1 sticky-top z-3 pb-4 pb-lg-0">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 d-none d-lg-block">
 					<nav class="main-nav">
 						<!-- ***** Logo Start ***** -->
-						<a href="blue-index.html" class="logo">
+						<a href="blue-index.html" class="logo float-start mt-4">
 							<img src="assets/images/logo-blue.png" alt="Kentho"/>
 						</a>
 						<!-- ***** Logo End ***** -->
 
 						<!-- ***** Menu Start ***** -->
-						<ul class="nav">
-							<li><a href="blue-index.html#welcome">Home</a></li>
-							<li class="submenu">
-								<a href="javascript:;">Discover</a>
-								<ul>
-									<li><a href="blue-index.html#features">Features</a></li>
-									<li><a href="blue-index.html#our-team">Our Team</a></li>
-									<li><a href="blue-index.html#pricing-plans">Pricing Plans</a></li>
-									<li><a href="blue-index.html#blog">Latests Blogs</a></li>
+						<ul class="nav float-start mt-4 ms-lg-5 gap-3">
+							<li><a class="py-2 py-lg-0 text-decoration-none d-block fs-7 lh-lg color-3 opacity-75 fw-4 " href="blue-index.html#welcome">Home</a></li>
+							<li class="submenu position-relative dropdown">
+								<a class="py-2 py-lg-0 text-decoration-none d-block fs-7 lh-lg color-3 opacity-75 fw-4 " data-bs-toggle="dropdown" aria-expanded="false" href="javascript:;">Discover</a>
+								<ul class="rounded-3 shadow p-0  dropdown-menu rounded-3">
+									<li class="list-unstyled"><a class="py-1 text-decoration-none d-block fs-7 lh-lg color-3 bg-color-1 ps-3 position-relative py-1 opacity-75 dropdown-item fw-4" href="blue-index.html#features">Features</a></li>
+									<li class="list-unstyled"><a class="py-1 text-decoration-none d-block fs-7 lh-lg color-3 bg-color-1 ps-3 position-relative py-1 opacity-75 dropdown-item fw-4" href="blue-index.html#our-team">Our Team</a></li>
+									<li class="list-unstyled"><a class="py-1 text-decoration-none d-block fs-7 lh-lg color-3 bg-color-1 ps-3 position-relative py-1 opacity-75 dropdown-item fw-4" href="blue-index.html#pricing-plans">Pricing Plans</a></li>
+									<li class="list-unstyled"><a class="py-1 text-decoration-none d-block fs-7 lh-lg color-3 bg-color-1 ps-3 position-relative py-1 opacity-75 dropdown-item fw-4" href="blue-index.html#blog">Latests Blogs</a></li>
 								</ul>
 							</li>
-							<li class="submenu">
-								<a href="javascript:;">Pages</a>
-								<ul>
-									<li><a href="blue-about.html">About Us</a></li>
-									<li><a href="blue-features.html">Features</a></li>
-									<li><a href="blue-faq.html">FAQ's</a></li>
-									<li><a href="blue-blog.html">Blog</a></li>
+							<li class="submenu position-relative dropdown">
+								<a class="py-2 py-lg-0 text-decoration-none d-block fs-7 lh-lg color-3 opacity-75 fw-4 " data-bs-toggle="dropdown" aria-expanded="false" href="javascript:;">Pages</a>
+								<ul class="rounded-3 shadow p-0  dropdown-menu rounded-3">
+									<li class="list-unstyled"><a class="dropdown-item py-1 text-decoration-none fw-4 d-block fs-7 lh-lg color-3 bg-color-1 ps-3 position-relative py-1 opacity-75" href="blue-about.html">About Us</a></li>
+									<li class="list-unstyled"><a class="dropdown-item py-1 text-decoration-none fw-4 d-block fs-7 lh-lg color-3 bg-color-1 ps-3 position-relative py-1 opacity-75" href="blue-features.html">Features</a></li>
+									<li class="list-unstyled"><a class="dropdown-item py-1 text-decoration-none fw-4 d-block fs-7 lh-lg color-3 bg-color-1 ps-3 position-relative py-1 opacity-75" href="blue-faq.html">FAQ's</a></li>
+									<li class="list-unstyled"><a class="dropdown-item py-1 text-decoration-none fw-4 d-block fs-7 lh-lg color-3 bg-color-1 ps-3 position-relative py-1 opacity-75" href="blue-blog.html">Blog</a></li>
 								</ul>
 							</li>
-							<li><a href="blue-contact.html">Contact</a></li>
+							<li><a class="py-2 py-lg-0 text-decoration-none d-block fs-7 lh-lg color-3 opacity-75 fw-4 " href="blue-contact.html">Contact</a></li>
 						</ul>
-						<a class='menu-trigger'>
-							<span>Menu</span>
+						
+						<a class='menu-trigger position-absolute z-3 mt-4 d-lg-none'>
+							<svg class="" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
 						</a>
 						<!-- ***** Menu End ***** -->
-
 						<!-- ***** Header Buttons Start ***** -->
-						<ul class="header-buttons">
-							<li><a class="btn-nav-line" href="#">SIGN IN</a></li>
-							<li><a class="btn-nav-primary" href="#">SIGN UP</a></li>
+						<ul class="header-buttons d-none d-lg-block float-end">
+							<li class="list-unstyled float-start"><a class="text-decoration-none btn-nav-line px-4 py-1 d-inline-block rounded-5 color-2 mt-4 border border-color-2" href="#">SIGN IN</a></li>
+							<li class="list-unstyled float-start ms-3"><a class="text-decoration-none btn-nav-primary px-4 py-1 d-inline-block rounded-5 mt-4 bg-color-2 color-1 border-color border-color-2" href="#">SIGN UP</a></li>
 						</ul>
 						<!-- ***** Header Buttons End ***** -->
 					</nav>
 				</div>
+				<!-- menu-Mobile -->
+				<div class="col-12 d-lg-none">
+					<nav class="main_nav">
+						<!-- ***** Logo Start ***** -->
+						<a href="blue-index.html" class="logo float-start mt-4 ">
+							<img src="assets/images/logo-blue.png" alt="Kentho"/>
+						</a>
+						<!-- ***** Logo End ***** -->
+
+						<!-- ***** Menu Start ***** -->
+						<ul class="nav float-start mt-4 ms-lg-5 gap-3 w-100 ">
+							<li><a class="py-2 py-lg-0 text-decoration-none d-block fs-6 lh-lg color-3 opacity-75 fw-4 " href="blue-index.html#welcome">Home</a></li>
+							<li class="submenu position-relative dropdown">
+								<a class="py-2 py-lg-0 text-decoration-none d-block fs-6 lh-lg color-3 opacity-75 fw-4 "  href="javascript:;">Discover</a>
+								<ul class="rounded-3 shadow p-0  dropdown-menu rounded-3 border-0 rounded-3 position-relative">
+									<li class="list-unstyled"><a class="py-1 text-decoration-none d-block fs-7 lh-lg color-3 bg-color-1 ps-3 position-relative py-1 opacity-75 dropdown-item fw-4" href="blue-index.html#features">Features</a></li>
+									<li class="list-unstyled"><a class="py-1 text-decoration-none d-block fs-7 lh-lg color-3 bg-color-1 ps-3 position-relative py-1 opacity-75 dropdown-item fw-4" href="blue-index.html#our-team">Our Team</a></li>
+									<li class="list-unstyled"><a class="py-1 text-decoration-none d-block fs-7 lh-lg color-3 bg-color-1 ps-3 position-relative py-1 opacity-75 dropdown-item fw-4" href="blue-index.html#pricing-plans">Pricing Plans</a></li>
+									<li class="list-unstyled"><a class="py-1 text-decoration-none d-block fs-7 lh-lg color-3 bg-color-1 ps-3 position-relative py-1 opacity-75 dropdown-item fw-4" href="blue-index.html#blog">Latests Blogs</a></li>
+								</ul>
+							</li>
+							<li class="submenu position-relative dropdown">
+								<a class="py-2 py-lg-0 text-decoration-none d-block fs-6 lh-lg color-3 opacity-75 fw-4 "  href="javascript:;">Pages</a>
+								<ul class="rounded-3 shadow p-0  dropdown-menu rounded-3 border-0 rounded-3 position-relative">
+									<li class="list-unstyled"><a class="dropdown-item py-1 text-decoration-none fw-4 d-block fs-7 lh-lg color-3 bg-color-1 ps-3 position-relative py-1 opacity-75" href="blue-about.html">About Us</a></li>
+									<li class="list-unstyled"><a class="dropdown-item py-1 text-decoration-none fw-4 d-block fs-7 lh-lg color-3 bg-color-1 ps-3 position-relative py-1 opacity-75" href="blue-features.html">Features</a></li>
+									<li class="list-unstyled"><a class="dropdown-item py-1 text-decoration-none fw-4 d-block fs-7 lh-lg color-3 bg-color-1 ps-3 position-relative py-1 opacity-75" href="blue-faq.html">FAQ's</a></li>
+									<li class="list-unstyled"><a class="dropdown-item py-1 text-decoration-none fw-4 d-block fs-7 lh-lg color-3 bg-color-1 ps-3 position-relative py-1 opacity-75" href="blue-blog.html">Blog</a></li>
+								</ul>
+							</li>
+							<li><a class="py-2 py-lg-0 text-decoration-none d-block fs-6 lh-lg color-3 opacity-75 fw-4 " href="blue-contact.html">Contact</a></li>
+						</ul>
+						<a class='menu-trigger position-absolute z-3 mt-4 d-lg-none'>
+
+							<svg class="" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+						</a>
+						<!-- ***** Menu End ***** -->
+						<!-- ***** Header Buttons Start ***** -->
+						<ul class="header-buttons d-none d-lg-block float-end">
+							<li class="list-unstyled float-start"><a class="text-decoration-none btn-nav-line px-4 py-1 d-inline-block rounded-5 color-2 mt-4 border border-color-2" href="#">SIGN IN</a></li>
+							<li class="list-unstyled float-start ms-3"><a class="text-decoration-none btn-nav-primary px-4 py-1 d-inline-block rounded-5 mt-4 bg-color-2 color-1 border-color border-color-2" href="#">SIGN UP</a></li>
+						</ul>
+						<!-- ***** Header Buttons End ***** -->
+					</nav>
+				</div>
+
 			</div>
 		</div>
 	</header>
@@ -85,17 +133,20 @@
 
 	<section class="page">
 		<!-- ***** Page Top Start ***** -->
-		<div class="cover" data-image="assets/images/photos/parallax-cover.jpg">
-			<div class="page-top">
-				<div class="container">
+		<div class="cover mt-2 position-relative overflow-hidden" data-image="assets/images/photos/parallax-cover.jpg">
+			
+			<div class="page-top position-absolute w-100 text-center mt-5 pt-3 z-2">
+				<div class="container ">
 					<div class="row">
 						<div class="col-lg-12">
-							<h1>F.A.Q.'s</h1>
+							<h1 class=" lh-base color-1 text-center">F.A.Q.'s</h1>
 						</div>
 						<div class="col-lg-12">
-							<ol class="breadcrumb">
-								<li><a href="blue-index.html">Home</a></li>
-								<li class="active">F.A.Q.'s</li>
+							<ol class="breadcrumb float-none d-inline-block text-center border border-color-6 px-3 rounded-2 py-1 pb-2 opacity-75 fs-7">
+								<li class="d-inline-block ms-2"><a class="color-6 text-decoration-none" href="blue-index.html">Home</a> 
+									<svg xmlns="http://www.w3.org/2000/svg" fill="white" width="13" height="13" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+								</li>
+								<li class=" d-inline-block ms-2 active color-6">F.A.Q.'s</li>
 							</ol>
 						</div>
 					</div>
@@ -103,68 +154,72 @@
 			</div>
 		</div>
 		<!-- ***** Page Top End ***** -->
-
-
 		<!-- ***** Page Content Start ***** -->
 		<div class="page-bottom padding-bottom-0 white-bg">
-			<div class="container margin-bottom-70">
+			<div class="container my-5">
 				<div class="row">
 					<div class="col-lg-6 col-md-12 col-sm-12">
 						<div class="faq-wrapper">
-							<div class="faq-header">
-								<h2>Freequently Asked Questions</h2>
-								<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed finibus faucibus congue. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-								<div class="search">
-									<input type="text" placeholder="Search asked questions">
-									<button><i class="fa fa-search"></i></button>
+							<div class="faq-header mb-0">
+								<h2 class="fs-4 color-2 opacity-75 mb-2">Freequently Asked Questions</h2>
+								<p class="mb-4 opacity-75 fw-4">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed finibus faucibus congue. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+								<div class="search position-relative mb-5">
+									<input class="position-absolute w-100 start-0 bg-color-6 rounded-3 ps-3 border-0 fs-7" type="text" placeholder="Search asked questions">
+									<button class="bg-color-7 border-0 position-absolute end-0 p-2 rounded-3 d-flex mt-2 me-2">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="white" width="20" height="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+									</button>
 								</div>
 							</div>
 						</div>
 					</div>
 
 					<!-- ***** Page Content Start ***** -->
-					<div class="col-lg-6 col-md-12 col-sm-12">
-						<div class="faq" id="accordion">
-							<div class="card">
-								<div class="card-header" id="faqHeading-1">
+					<div class="col-lg-6 col-md-12 col-sm-12 mt-5 mt-lg-0">
+						<div class="faq bg-color-1 rounded-3 mb-4" id="accordion">
+							<div class="card border-0 ">
+								<div class="card-header p-0 border-0" id="faqHeading-1">
 									<div class="mb-0">
-										<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
+										<h5 class="faq-title w-100 text-start px-4 fs-6 color-2 py-3" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
 											How does Kentho Internet work?
 										</h5>
 									</div>
 								</div>
+								<div class="border border-color-3 opacity-25"></div>
+
 								<div id="faqCollapse-1" class="collapse show" aria-labelledby="faqHeading-1" data-parent="#accordion">
-									<div class="card-body">
+									<div class="card-body fs-7 lh-lg color-3 opacity-75 fw-4 p-3">
 										<p>Aliquam erat odio, fringilla at porta a, vehicula ultricies est. Aliquam maximus turpis in dignissim pellentesque. Ut dolor quam, aliquam eget bibendum nec, luctus non metus. Morbi convallis.</p>
 										<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed finibus faucibus congue.</p>
 									</div>
 								</div>
 							</div>
-							<div class="card">
-								<div class="card-header" id="faqHeading-2">
+							<div class="card border-0 ">
+								<div class="card-header p-0 border-0" id="faqHeading-2">
 									<div class="mb-0">
-										<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2" data-aria-expanded="false" data-aria-controls="faqCollapse-2">
+										<h5 class="faq-title w-100 text-start px-4 fs-6 color-2 py-3" data-toggle="collapse" data-target="#faqCollapse-2" data-aria-expanded="false" data-aria-controls="faqCollapse-2">
 											How fast is the Kentho Internet service?
 										</h5>
 									</div>
 								</div>
+								<div class="border border-color-3 opacity-25"></div>
+
 								<div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
-									<div class="card-body">
+									<div class="card-body fs-7 lh-lg color-3 opacity-75 fw-4 p-3">
 										<p>Aliquam erat odio, fringilla at porta a, vehicula ultricies est. Aliquam maximus turpis in dignissim pellentesque. Ut dolor quam, aliquam eget bibendum nec, luctus non metus. Morbi convallis.</p>
 										<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed finibus faucibus congue.</p>
 									</div>
 								</div>
 							</div>
-							<div class="card">
-								<div class="card-header" id="faqHeading-3">
+							<div class="card border-0 ">
+								<div class="card-header p-0 border-0" id="faqHeading-3">
 									<div class="mb-0">
-										<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3" data-aria-expanded="false" data-aria-controls="faqCollapse-3">
+										<h5 class="faq-title w-100 text-start px-4 fs-6 color-2 py-3" data-toggle="collapse" data-target="#faqCollapse-3" data-aria-expanded="false" data-aria-controls="faqCollapse-3">
 											Can I keep my home phone number?
 										</h5>
 									</div>
 								</div>
 								<div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3" data-parent="#accordion">
-									<div class="card-body">
+									<div class="card-body fs-7 lh-lg color-3 opacity-75 fw-4 p-3">
 										<p>Aliquam erat odio, fringilla at porta a, vehicula ultricies est. Aliquam maximus turpis in dignissim pellentesque. Ut dolor quam, aliquam eget bibendum nec, luctus non metus. Morbi convallis.</p>
 										<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed finibus faucibus congue.</p>
 									</div>
@@ -177,49 +232,63 @@
 			</div>
 
 			<!-- ***** Features Big Item Start ***** -->
-			<div class="section colored padding-bottom-70" id="features">
+			<section class=" bg-color-5 py-5 " id="features">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
-							<div class="left-heading">
-								<h2 class="section-title">Reservations Management</h2>
+						<div class="col-lg-6 col-md-12 col-sm-12 align-self-center mb-4">
+							<div class="">
+								<h2 class="color-2 opacity-75 lh-lg">Reservations Management</h2>
 							</div>
-							<div class="left-text">
-								<p>Phasellus vitae velit sit amet diam semper commodo quis quis libero. Morbi consequat arcu augue, molestie faucibus metus ullamcorper vel.</p>
+							<div class="fs-6 color-3 lh-base">
+								<p class="mb-4 opacity-75 color-3">Phasellus vitae velit sit amet diam semper commodo quis quis libero. Morbi consequat arcu augue, molestie faucibus metus ullamcorper vel.</p>
 								<div class="row">
 									<div class="col-lg-12">
-										<a class="btn-home active" href="#">
-											<i class="fa fa-angle-right"></i>
-											<span>Sed facilisis tempor dolor, ac mollis</span>
+										<a class="btn-home w-100 m-auto d-inline-block lh-lg d-flex bg-color-6 fs-7 rounded-3 position-relative overflow-auto py-2 shadow-sm active mb-3 text-decoration-none" href="#">
+											<!-- <i class="fa fa-angle-right "></i> -->
+											<div class="bg-color-2 position-absolute top-0 start-0 h-100 d-flex align-items-center justify-content-center px-4">
+												<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="white" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+											</div>
+											<span class="position-relative ms-5 ps-4 fs-6 color-3 opacity-75">Sed facilisis tempor dolor, ac mollis</span>
+										</a>
+									</div>
+		
+									<div class="col-lg-12">
+										<a class="btn-home  w-100 m-auto d-inline-block lh-lg d-flex bg-color-6 fs-7 rounded-3 position-relative overflow-auto py-2 mb-3 shadow-sm text-decoration-none" href="#">
+											<!-- <i class="fa fa-angle-right "></i> -->
+											<div class="demo bg-color-5 position-absolute top-0 start-0 h-100 d-flex align-items-center justify-content-center px-4">
+												<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#2e3d62" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+											</div>
+											<span class="position-relative ms-5 ps-4 fs-6 color-3 opacity-75">Sed facilisis tempor dolor, ac mollis</span>
+										</a>
+									</div>
+		
+									<div class="col-lg-12">
+										<a class="btn-home  w-100 m-auto d-inline-block lh-lg d-flex bg-color-6 fs-7 rounded-3 position-relative overflow-auto py-2 mb-3 shadow-sm text-decoration-none" href="#">
+											<!-- <i class="fa fa-angle-right "></i> -->
+											<div class="demo bg-color-5 position-absolute top-0 start-0 h-100 d-flex align-items-center justify-content-center px-4">
+												<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#2e3d62" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+											</div>
+											<span class="position-relative ms-5 ps-4 fs-6 color-3 opacity-75">Sed facilisis tempor dolor, ac mollis</span>
 										</a>
 									</div>
 									<div class="col-lg-12">
-										<a class="btn-home" href="#">
-											<i class="fa fa-angle-right"></i>
-											<span>Donec ac lectus in lacus.</span>
-										</a>
-									</div>
-									<div class="col-lg-12">
-										<a class="btn-home" href="#">
-											<i class="fa fa-angle-right"></i>
-											<span>Praesent mauris risus, condimentum ac</span>
-										</a>
-									</div>
-									<div class="col-lg-12">
-										<a class="btn-home" href="#">
-											<i class="fa fa-angle-right"></i>
-											<span>Quisque cursus viverra justo</span>
+										<a class="btn-home  w-100 m-auto d-inline-block lh-lg d-flex bg-color-6 fs-7 rounded-3 position-relative overflow-auto py-2 mb-3 shadow-sm text-decoration-none" href="#">
+											<!-- <i class="fa fa-angle-right "></i> -->
+											<div class="demo bg-color-5 position-absolute top-0 start-0 h-100 d-flex align-items-center justify-content-center px-4">
+												<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#2e3d62" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+											</div>
+											<span class="position-relative ms-5 ps-4 fs-6 color-3 opacity-75">Sed facilisis tempor dolor, ac mollis</span>
 										</a>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+						<div class="col-lg-6 col-md-12 col-sm-12 align-self-center mb-4" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
 							<img src="assets/images/photos/features/blue-1.png" class="img-fluid d-block mx-auto" alt="App">
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 			<!-- ***** Features Big Item End ***** -->
 		</div>
 		<!-- ***** Page Content End ***** -->
@@ -228,50 +297,52 @@
 
 	
 	<!-- ***** Footer Start ***** -->
-	<footer>
-		<div class="container">
+	<!-- ***** Footer Start ***** -->
+	<footer class="bg-color-2 pt-5">
+		<div class="container ">
 			<div class="row">
-				<div class="col-lg-5 col-md-12 col-sm-12">
-					<img src="assets/images/logo-white.png" class="logo" alt="">
-					<div class="text">Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</div>
-					<ul class="social">
-						<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-						<li><a href="#"><i class="fa fa-github-square"></i></a></li>
+				<div class="col-lg-5 col-md-12 col-sm-12 mb-3">
+					<img src="assets/images/logo-white.png" class="logo mb-4 pb-2" alt="">
+					<div class=" fs-6 color-1 lh-base pe-4 opacity-75 mb-2">Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</div>
+					<ul class="mt-1 list-unstyled">
+						<li class="float-start me-2"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg></a></li>
+						<li class="float-start me-2"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z"/></svg></a></li>
+						<li class="float-start me-2"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"/></svg></a></li>
+						<li class="float-start me-2"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 488 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg></a></li>
+						<li class="float-start me-2"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM265.8 407.7c0-1.8 0-6 .1-11.6c.1-11.4 .1-28.8 .1-43.7c0-15.6-5.2-25.5-11.3-30.7c37-4.1 76-9.2 76-73.1c0-18.2-6.5-27.3-17.1-39c1.7-4.3 7.4-22-1.7-45c-13.9-4.3-45.7 17.9-45.7 17.9c-13.2-3.7-27.5-5.6-41.6-5.6s-28.4 1.9-41.6 5.6c0 0-31.8-22.2-45.7-17.9c-9.1 22.9-3.5 40.6-1.7 45c-10.6 11.7-15.6 20.8-15.6 39c0 63.6 37.3 69 74.3 73.1c-4.8 4.3-9.1 11.7-10.6 22.3c-9.5 4.3-33.8 11.7-48.3-13.9c-9.1-15.8-25.5-17.1-25.5-17.1c-16.2-.2-1.1 10.2-1.1 10.2c10.8 5 18.4 24.2 18.4 24.2c9.7 29.7 56.1 19.7 56.1 19.7c0 9 .1 21.7 .1 30.6c0 4.8 .1 8.6 .1 10c0 4.3-3 9.5-11.5 8C106 393.6 59.8 330.8 59.8 257.4c0-91.8 70.2-161.5 162-161.5s166.2 69.7 166.2 161.5c.1 73.4-44.7 136.3-110.7 158.3c-8.4 1.5-11.5-3.7-11.5-8zm-90.5-54.8c-.2-1.5 1.1-2.8 3-3.2c1.9-.2 3.7 .6 3.9 1.9c.3 1.3-1 2.6-3 3c-1.9 .4-3.7-.4-3.9-1.7zm-9.1 3.2c-2.2 .2-3.7-.9-3.7-2.4c0-1.3 1.5-2.4 3.5-2.4c1.9-.2 3.7 .9 3.7 2.4c0 1.3-1.5 2.4-3.5 2.4zm-14.3-2.2c-1.9-.4-3.2-1.9-2.8-3.2s2.4-1.9 4.1-1.5c2 .6 3.3 2.1 2.8 3.4c-.4 1.3-2.4 1.9-4.1 1.3zm-12.5-7.3c-1.5-1.3-1.9-3.2-.9-4.1c.9-1.1 2.8-.9 4.3 .6c1.3 1.3 1.8 3.3 .9 4.1c-.9 1.1-2.8 .9-4.3-.6zm-8.5-10c-1.1-1.5-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3c1.1 1.5 1.1 3.3 0 4.1c-.9 .6-2.6 0-3.7-1.5zm-6.3-8.8c-1.1-1.3-1.3-2.8-.4-3.5c.9-.9 2.4-.4 3.5 .6c1.1 1.3 1.3 2.8 .4 3.5c-.9 .9-2.4 .4-3.5-.6zm-6-6.4c-1.3-.6-1.9-1.7-1.5-2.6c.4-.6 1.5-.9 2.8-.4c1.3 .7 1.9 1.8 1.5 2.6c-.4 .9-1.7 1.1-2.8 .4z"/></svg></a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
-					<h5>Helpful Links</h5>
-					<ul class="footer-nav">
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>About Us</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Features</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>FAQ’s</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Blog</span></a></li>
+					<h5 class="mb-4 fs-6 lh-lg mb-4 color-6">Helpful Links</h5>
+					<ul class="footer-nav list-unstyled">
+						<li><a class="d-block overflow-hidden py-2" href="#"><svg class="float-start mt-1 me-2" xmlns="http://www.w3.org/2000/svg" fill="white" width="10" height="10" viewBox="0 0 390 452"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg><span class="float-start lh-base color-6 fs-7 footer-nav__text opacity-75">About Us</span></a></li>
+						<li><a class="d-block overflow-hidden py-2" href="#"><svg class="float-start mt-1 me-2" xmlns="http://www.w3.org/2000/svg" fill="white" width="10" height="10" viewBox="0 0 390 452"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg><span class="float-start lh-base color-6 fs-7 footer-nav__text opacity-75">Features</span></a></li>
+						<li><a class="d-block overflow-hidden py-2" href="#"><svg class="float-start mt-1 me-2" xmlns="http://www.w3.org/2000/svg" fill="white" width="10" height="10" viewBox="0 0 390 452"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg><span class="float-start lh-base color-6 fs-7 footer-nav__text opacity-75">FAQ’s</span></a></li>
+						<li><a class="d-block overflow-hidden py-2" href="#"><svg class="float-start mt-1 me-2" xmlns="http://www.w3.org/2000/svg" fill="white" width="10" height="10" viewBox="0 0 390 452"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg><span class="float-start lh-base color-6 fs-7 footer-nav__text opacity-75">Blog</span></a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
-					<h5>Support</h5>
-					<ul class="footer-nav">
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Privacy Policy</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Terms of Use</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Support Center</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Contact</span></a></li>
+					<h5 class="mb-4 fs-6 lh-lg mb-4 color-6">Support</h5>
+					<ul class="footer-nav list-unstyled">
+						<li><a class="d-block overflow-hidden py-2" href="#"><svg class="float-start mt-1 me-2" xmlns="http://www.w3.org/2000/svg" fill="white" width="10" height="10" viewBox="0 0 390 452"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg><span class="float-start lh-base color-6 fs-7 footer-nav__text opacity-75">Privacy Policy</span></a></li>
+						<li><a class="d-block overflow-hidden py-2" href="#"><svg class="float-start mt-1 me-2" xmlns="http://www.w3.org/2000/svg" fill="white" width="10" height="10" viewBox="0 0 390 452"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg><span class="float-start lh-base color-6 fs-7 footer-nav__text opacity-75">Terms of Use</span></a></li>
+						<li><a class="d-block overflow-hidden py-2" href="#"><svg class="float-start mt-1 me-2" xmlns="http://www.w3.org/2000/svg" fill="white" width="10" height="10" viewBox="0 0 390 452"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg><span class="float-start lh-base color-6 fs-7 footer-nav__text opacity-75">Support Center</span></a></li>
+						<li><a class="d-block overflow-hidden py-2" href="#"><svg class="float-start mt-1 me-2" xmlns="http://www.w3.org/2000/svg" fill="white" width="10" height="10" viewBox="0 0 390 452"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg><span class="float-start lh-base color-6 fs-7 footer-nav__text opacity-75">Contact</span></a></li>
 					</ul>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-12">
-					<h5>Contact Us</h5>
+					<h5 class="mb-4 fs-6 lh-lg mb-4 color-6">Contact Us</h5>
 					<div class="address">
-						<p>455 West Orchard Street<br>Kings Mountain, NC 28086</p>
-						<p>Phone: (272) 211-7370</p>
-						<p><span>E-Mail:</span><a href="#">support@yourbrand.com</a></p>
+						<p class="d-block overflow-hidden fs-7 color-1 lh-lg mb-1 opacity-75">455 West Orchard Street<br>Kings Mountain, NC 28086</p>
+						<p class="d-block overflow-hidden fs-7 color-1 lh-lg mb-1 opacity-75">Phone: (272) 211-7370</p>
+						<p class="d-block overflow-hidden fs-7 color-1 lh-lg mb-1 opacity-75"><span>E-Mail:</span><a class="color-1 text-decoration-none" href="#">support@yourbrand.com</a></p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
-					<p class="copyright">© 2019 Kentho. All Rights Reserved.</p>
+					<p class="border-top opacity-25 mt-4 pt-1"></p>
+					<p class=" text-center my-4 pt-2 fs-6 color-1 opacity-75">© 2019 Kentho. All Rights Reserved.</p>
 				</div>
 			</div>
 		</div>

@@ -289,6 +289,45 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./public/scss/blue-index/blue-faq.scss":
+/*!**********************************************!*\
+  !*** ./public/scss/blue-index/blue-faq.scss ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./public/scss/blue-index/blue-blog.scss":
+/*!***********************************************!*\
+  !*** ./public/scss/blue-index/blue-blog.scss ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./public/scss/blue-index/blue-contact.scss":
+/*!**************************************************!*\
+  !*** ./public/scss/blue-index/blue-contact.scss ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./public/scss/blue.scss":
 /*!*******************************!*\
   !*** ./public/scss/blue.scss ***!
@@ -446,6 +485,9 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			"dist/css/index": 0,
 /******/ 			"dist/css/global": 0,
 /******/ 			"dist/css/common": 0,
+/******/ 			"dist/css/blue-contact": 0,
+/******/ 			"dist/css/blue-blog": 0,
+/******/ 			"dist/css/blue-faq": 0,
 /******/ 			"dist/css/features": 0,
 /******/ 			"dist/css/blue-about": 0
 /******/ 		};
@@ -497,14 +539,17 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["dist/css/blue_index","dist/css/blue","dist/css/index","dist/css/global","dist/css/common","dist/css/features","dist/css/blue-about"], () => (__webpack_require__("./public/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["dist/css/blue_index","dist/css/blue","dist/css/index","dist/css/global","dist/css/common","dist/css/features","dist/css/blue-about"], () => (__webpack_require__("./public/scss/blue.scss")))
-/******/ 	__webpack_require__.O(undefined, ["dist/css/blue_index","dist/css/blue","dist/css/index","dist/css/global","dist/css/common","dist/css/features","dist/css/blue-about"], () => (__webpack_require__("./public/scss/common.scss")))
-/******/ 	__webpack_require__.O(undefined, ["dist/css/blue_index","dist/css/blue","dist/css/index","dist/css/global","dist/css/common","dist/css/features","dist/css/blue-about"], () => (__webpack_require__("./public/scss/global.scss")))
-/******/ 	__webpack_require__.O(undefined, ["dist/css/blue_index","dist/css/blue","dist/css/index","dist/css/global","dist/css/common","dist/css/features","dist/css/blue-about"], () => (__webpack_require__("./public/scss/blue-index/blue_index.scss")))
-/******/ 	__webpack_require__.O(undefined, ["dist/css/blue_index","dist/css/blue","dist/css/index","dist/css/global","dist/css/common","dist/css/features","dist/css/blue-about"], () => (__webpack_require__("./public/scss/blue-index/index.scss")))
-/******/ 	__webpack_require__.O(undefined, ["dist/css/blue_index","dist/css/blue","dist/css/index","dist/css/global","dist/css/common","dist/css/features","dist/css/blue-about"], () => (__webpack_require__("./public/scss/blue-index/blue-about.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["dist/css/blue_index","dist/css/blue","dist/css/index","dist/css/global","dist/css/common","dist/css/features","dist/css/blue-about"], () => (__webpack_require__("./public/scss/blue-index/features.scss")))
+/******/ 	__webpack_require__.O(undefined, ["dist/css/blue_index","dist/css/blue","dist/css/index","dist/css/global","dist/css/common","dist/css/blue-contact","dist/css/blue-blog","dist/css/blue-faq","dist/css/features","dist/css/blue-about"], () => (__webpack_require__("./public/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["dist/css/blue_index","dist/css/blue","dist/css/index","dist/css/global","dist/css/common","dist/css/blue-contact","dist/css/blue-blog","dist/css/blue-faq","dist/css/features","dist/css/blue-about"], () => (__webpack_require__("./public/scss/blue.scss")))
+/******/ 	__webpack_require__.O(undefined, ["dist/css/blue_index","dist/css/blue","dist/css/index","dist/css/global","dist/css/common","dist/css/blue-contact","dist/css/blue-blog","dist/css/blue-faq","dist/css/features","dist/css/blue-about"], () => (__webpack_require__("./public/scss/common.scss")))
+/******/ 	__webpack_require__.O(undefined, ["dist/css/blue_index","dist/css/blue","dist/css/index","dist/css/global","dist/css/common","dist/css/blue-contact","dist/css/blue-blog","dist/css/blue-faq","dist/css/features","dist/css/blue-about"], () => (__webpack_require__("./public/scss/global.scss")))
+/******/ 	__webpack_require__.O(undefined, ["dist/css/blue_index","dist/css/blue","dist/css/index","dist/css/global","dist/css/common","dist/css/blue-contact","dist/css/blue-blog","dist/css/blue-faq","dist/css/features","dist/css/blue-about"], () => (__webpack_require__("./public/scss/blue-index/blue_index.scss")))
+/******/ 	__webpack_require__.O(undefined, ["dist/css/blue_index","dist/css/blue","dist/css/index","dist/css/global","dist/css/common","dist/css/blue-contact","dist/css/blue-blog","dist/css/blue-faq","dist/css/features","dist/css/blue-about"], () => (__webpack_require__("./public/scss/blue-index/index.scss")))
+/******/ 	__webpack_require__.O(undefined, ["dist/css/blue_index","dist/css/blue","dist/css/index","dist/css/global","dist/css/common","dist/css/blue-contact","dist/css/blue-blog","dist/css/blue-faq","dist/css/features","dist/css/blue-about"], () => (__webpack_require__("./public/scss/blue-index/blue-about.scss")))
+/******/ 	__webpack_require__.O(undefined, ["dist/css/blue_index","dist/css/blue","dist/css/index","dist/css/global","dist/css/common","dist/css/blue-contact","dist/css/blue-blog","dist/css/blue-faq","dist/css/features","dist/css/blue-about"], () => (__webpack_require__("./public/scss/blue-index/features.scss")))
+/******/ 	__webpack_require__.O(undefined, ["dist/css/blue_index","dist/css/blue","dist/css/index","dist/css/global","dist/css/common","dist/css/blue-contact","dist/css/blue-blog","dist/css/blue-faq","dist/css/features","dist/css/blue-about"], () => (__webpack_require__("./public/scss/blue-index/blue-faq.scss")))
+/******/ 	__webpack_require__.O(undefined, ["dist/css/blue_index","dist/css/blue","dist/css/index","dist/css/global","dist/css/common","dist/css/blue-contact","dist/css/blue-blog","dist/css/blue-faq","dist/css/features","dist/css/blue-about"], () => (__webpack_require__("./public/scss/blue-index/blue-blog.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["dist/css/blue_index","dist/css/blue","dist/css/index","dist/css/global","dist/css/common","dist/css/blue-contact","dist/css/blue-blog","dist/css/blue-faq","dist/css/features","dist/css/blue-about"], () => (__webpack_require__("./public/scss/blue-index/blue-contact.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

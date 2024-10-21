@@ -1,0 +1,27 @@
+form{
+    border: 1px solid black;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+.row {
+    display: flex;
+
+    justify-content: space-between;
+    border: 1px solid black;
+    align-items: center;
+}
+.row-input{
+    width: 200px;
+    margin-right: 75px;
+}
+.labless{
+    border-right: 1px solid black;
+    width: 100px;
+}
+.checkbox-div{
+    display: flex;
+    margin: auto;
+    gap: 8px;
+    margin-left: 40px;
+}

@@ -1,0 +1,44 @@
+.btn-home:hover .demo, .btn-home.active .demo {
+  background-color: var(--color-2);
+  transition: 0.8s;
+}
+.btn-home:hover svg, .btn-home.active svg {
+  fill: var(--color-1);
+}
+
+.cover {
+  height: 270px;
+}
+.cover:before {
+  content: "";
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  left: -20%;
+  top: -20%;
+  right: -20%;
+  bottom: -20%;
+  background-image: linear-gradient(127deg, var(--color-2) 0%, var(--color-2) 91%);
+  z-index: 2;
+  opacity: 0.95;
+}
+
+.faq-wrapper .faq-header .search input {
+  height: 50px;
+  outline: none;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+.faq-wrapper .faq-header .search input:focus {
+  padding-left: 20px !important;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.13);
+}
+
+.faq {
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+}
+.faq .card .card-header:hover {
+  background: var(--color-5);
+  padding-left: 10px !important;
+  transition: 0.3s;
+}

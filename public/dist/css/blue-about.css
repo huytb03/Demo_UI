@@ -14,16 +14,6 @@
   z-index: 2;
   opacity: 0.95;
 }
-.page .page-bottom .about .about-image {
-  height: 500px;
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-}
-.page .page-bottom .about .about-text {
-  width: 40%;
-  right: 40px;
-  top: 50%;
-  transform: perspective(1px) translateY(-50%);
-}
 
 .features-small-item .icon {
   width: 70px;

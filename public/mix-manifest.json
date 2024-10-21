@@ -5,6 +5,9 @@
     "/dist/css/index.css": "/dist/css/index.css",
     "/dist/css/global.css": "/dist/css/global.css",
     "/dist/css/common.css": "/dist/css/common.css",
+    "/dist/css/blue-contact.css": "/dist/css/blue-contact.css",
+    "/dist/css/blue-blog.css": "/dist/css/blue-blog.css",
+    "/dist/css/blue-faq.css": "/dist/css/blue-faq.css",
     "/dist/css/features.css": "/dist/css/features.css",
     "/dist/css/blue-about.css": "/dist/css/blue-about.css"
 }
